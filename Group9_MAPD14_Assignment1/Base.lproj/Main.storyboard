@@ -16,7 +16,22 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UuD-xy-rLn">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="274.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fy4-gQ-8Gt">
+                                        <rect key="frame" x="12" y="168.66666666666666" width="366" height="95.999999999999972"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                        <color key="textColor" red="0.47843140360000003" green="0.11372549830000001" blue="0.2117646933" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.96078431610000004" green="0.78039217000000005" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="fy4-gQ-8Gt" firstAttribute="leading" secondItem="UuD-xy-rLn" secondAttribute="leading" constant="12" id="BxM-eh-LiT"/>
+                                    <constraint firstAttribute="bottom" secondItem="fy4-gQ-8Gt" secondAttribute="bottom" constant="10" id="GiL-ov-ZBO"/>
+                                    <constraint firstAttribute="trailing" secondItem="fy4-gQ-8Gt" secondAttribute="trailing" constant="12" id="ZkK-Pu-LzJ"/>
+                                    <constraint firstItem="fy4-gQ-8Gt" firstAttribute="top" relation="lessThanOrEqual" secondItem="UuD-xy-rLn" secondAttribute="top" constant="200" id="mv1-AV-zJP"/>
+                                    <constraint firstItem="fy4-gQ-8Gt" firstAttribute="height" secondItem="UuD-xy-rLn" secondAttribute="height" multiplier="0.35" id="xW1-Sj-VhW"/>
+                                </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="VXo-Qf-hzb">
                                 <rect key="frame" x="0.0" y="294.66666666666669" width="390" height="549.33333333333326"/>
