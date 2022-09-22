@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -67,7 +68,7 @@
                                                 <rect key="frame" x="292.66666666666669" y="0.0" width="97.333333333333314" height="73.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="X">
+                                                <state key="normal" title="x">
                                                     <color key="titleColor" red="0.87058818339999999" green="0.44313728810000003" blue="0.5176470876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                             </button>
@@ -228,6 +229,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rz4-CM-SW9"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="UuD-xy-rLn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CmZ-Db-FrZ"/>
@@ -240,6 +242,9 @@
                             <constraint firstItem="VXo-Qf-hzb" firstAttribute="height" secondItem="UuD-xy-rLn" secondAttribute="height" multiplier="2" id="j2J-xg-9gp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="result" destination="fy4-gQ-8Gt" id="ou9-IF-3qr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
