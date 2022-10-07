@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8F79F24F28D8D63200F3BD75 /* Group9_MAPD14_Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group9_MAPD14_Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F79F24F28D8D63200F3BD75 /* Group9_MAPD714_Assignment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group9_MAPD714_Assignment2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F79F25228D8D63200F3BD75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F79F25428D8D63200F3BD75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8F79F25628D8D63200F3BD75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		8F79F24628D8D63200F3BD75 = {
 			isa = PBXGroup;
 			children = (
-				8F79F25128D8D63200F3BD75 /* Group9_MAPD14_Assignment1 */,
+				8F79F25128D8D63200F3BD75 /* Group9_MAPD714_Assignment2 */,
 				8F79F25028D8D63200F3BD75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		8F79F25028D8D63200F3BD75 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F79F24F28D8D63200F3BD75 /* Group9_MAPD14_Assignment1.app */,
+				8F79F24F28D8D63200F3BD75 /* Group9_MAPD714_Assignment2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8F79F25128D8D63200F3BD75 /* Group9_MAPD14_Assignment1 */ = {
+		8F79F25128D8D63200F3BD75 /* Group9_MAPD714_Assignment2 */ = {
 			isa = PBXGroup;
 			children = (
 				8F79F25228D8D63200F3BD75 /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				8F79F25D28D8D63300F3BD75 /* LaunchScreen.storyboard */,
 				8F79F26028D8D63300F3BD75 /* Info.plist */,
 			);
-			path = Group9_MAPD14_Assignment1;
+			path = Group9_MAPD714_Assignment2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8F79F24E28D8D63200F3BD75 /* Group9_MAPD14_Assignment1 */ = {
+		8F79F24E28D8D63200F3BD75 /* Group9_MAPD714_Assignment2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F79F26328D8D63300F3BD75 /* Build configuration list for PBXNativeTarget "Group9_MAPD14_Assignment1" */;
+			buildConfigurationList = 8F79F26328D8D63300F3BD75 /* Build configuration list for PBXNativeTarget "Group9_MAPD714_Assignment2" */;
 			buildPhases = (
 				8F79F24B28D8D63200F3BD75 /* Sources */,
 				8F79F24C28D8D63200F3BD75 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = Group9_MAPD14_Assignment1;
+			name = Group9_MAPD714_Assignment2;
 			productName = Group9_MAPD14_Assignment1;
-			productReference = 8F79F24F28D8D63200F3BD75 /* Group9_MAPD14_Assignment1.app */;
+			productReference = 8F79F24F28D8D63200F3BD75 /* Group9_MAPD714_Assignment2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8F79F24A28D8D63200F3BD75 /* Build configuration list for PBXProject "Group9_MAPD14_Assignment1" */;
+			buildConfigurationList = 8F79F24A28D8D63200F3BD75 /* Build configuration list for PBXProject "Group9_MAPD714_Assignment2" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F79F24E28D8D63200F3BD75 /* Group9_MAPD14_Assignment1 */,
+				8F79F24E28D8D63200F3BD75 /* Group9_MAPD714_Assignment2 */,
 			);
 		};
 /* End PBXProject section */
@@ -289,7 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Group9_MAPD14_Assignment1/Info.plist;
+				INFOPLIST_FILE = Group9_MAPD714_Assignment2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -300,7 +300,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "EricDeveloper.Group9-MAPD14-Assignment1";
+				PRODUCT_BUNDLE_IDENTIFIER = "EricDeveloper.Group9-MAPD714-Assignment2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -316,7 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Group9_MAPD14_Assignment1/Info.plist;
+				INFOPLIST_FILE = Group9_MAPD714_Assignment2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -327,7 +327,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "EricDeveloper.Group9-MAPD14-Assignment1";
+				PRODUCT_BUNDLE_IDENTIFIER = "EricDeveloper.Group9-MAPD714-Assignment2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -338,7 +338,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8F79F24A28D8D63200F3BD75 /* Build configuration list for PBXProject "Group9_MAPD14_Assignment1" */ = {
+		8F79F24A28D8D63200F3BD75 /* Build configuration list for PBXProject "Group9_MAPD714_Assignment2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F79F26128D8D63300F3BD75 /* Debug */,
@@ -347,7 +347,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F79F26328D8D63300F3BD75 /* Build configuration list for PBXNativeTarget "Group9_MAPD14_Assignment1" */ = {
+		8F79F26328D8D63300F3BD75 /* Build configuration list for PBXNativeTarget "Group9_MAPD714_Assignment2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F79F26428D8D63300F3BD75 /* Debug */,
