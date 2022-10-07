@@ -10,7 +10,7 @@
 //  Created by Yachao on 2022-09-19.
 
 //  Revision History - Assignment2
-//  V2.0 add number and decimal point button function based on assignment1    - 2022-10-7
+//  V2.0 add numbers and decimal point button function   - 2022-10-7
 //  Last modified Date - 2022-10-7
 //
 //  About The APP
@@ -53,6 +53,19 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func ExtraButton_Pressed(_ sender: UIButton) {
+
+    }
     
+    @IBAction func DeleteButton_Pressed(_ sender: UIButton) {
+        if(FinalResult.text!.count == 1)
+        {
+            FinalResult.text! = "0"
+        }
+        else
+        {
+           FinalResult.text!.removeLast()
+        }
+    }
 }
 
