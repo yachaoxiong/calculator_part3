@@ -13,7 +13,10 @@
 //  V2.0 add numbers and decimal point button function              - 2022-10-7
 //  V2.1 add delete function                                        - 2022-10-8
 //  V2.3 add operator and clear function                            - 2022-10-8
-//  Last modified Date - 2022-10-7
+//  v2.4 revert code                                                - 2022-10-8
+//  v2.5 fix number type issue                                      - 2022-10-8
+//  v2.6 added revision info                                        - 2022-10-8
+//  Last modified Date - 2022-10-8
 //
 //  About The APP
 //  This app is to build a calculation tool that can perform arithmetic operations on numbers.
