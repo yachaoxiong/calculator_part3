@@ -144,4 +144,58 @@ class ViewController: UIViewController {
              outputResult_Label.text = handleOutputResult(output:String(tempResult))
          }
     
+    func handleWhenCurrentOperatorIsPlusOrMinus(currentOperator:String){
+        if digitStack.count < 2 {
+            operatorStack.append(currentOperator)
+        }else {
+            lastOperator = operatorStack[operatorStack.count-1]
+            let value1:Double = digitStack.removeLast()
+            removedDigitStack.append(value1)
+            let value2:Double = digitStack.removeLast()
+            removedDigitStack.append(value2)
+            
+            if(lastOperator == "+"){
+                tempResult = value1 + value2
+            }else{
+                tempResult = value2 - value1
+            }
+            let removedOperator = operatorStack.removeLast()
+            removedOperatorStack.append(removedOperator)
+            
+            digitStack.append(tempResult)
+            operatorStack.append(currentOperator)
+            outputResult_Label.text = handleOutputResult(output:String(tempResult))
+        }
+    }
+   func equalButton_Pressed(){
+         if  digitStack.count == operatorStack.count {
+             if hasFinishedInput == false{
+                 currentResult = Double(outputResult_Label.text!) ?? 0.0
+                 digitStack.append(currentResult)
+             }else{
+                 digitStack.append(digitStack[digitStack.count-1])
+             }
+         }
+         let lastOperator = operatorStack[operatorStack.count-1]
+         while operatorStack.count != 0 {
+             let value1:Double = digitStack.removeLast()
+             let value2:Double = digitStack.removeLast()
+             let currentOperator = operatorStack.removeLast()
+             if currentOperator == "×"{
+                 digitStack.append(value1 * value2)
+             }else if currentOperator == "÷"{
+                 digitStack.append(value2 / value1)
+             }else if currentOperator == "+"{
+                 digitStack.append(value1 + value2)
+             }else if currentOperator == "-"{
+                 digitStack.append(value2 - value1)
+             }
+         }
+         outputResult_Label.text = handleOutputResult(output:String(digitStack[digitStack.count-1]))
+         operatorStack.append(lastOperator)
+         if hasFinishedInput == false {
+             hasFinishedInput = true
+         }
+     }
+    
 }
