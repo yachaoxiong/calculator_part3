@@ -131,5 +131,17 @@ class ViewController: UIViewController {
            hasFinishedInput = false
        }
     
+    func hendleWhenLastOperatorIsMultiplicationOrDivide(lastOperator:String){
+             let value1:Double = digitStack.removeLast()
+             let value2:Double = digitStack.removeLast()
+             operatorStack.removeLast()
+             if lastOperator == "×" {
+                 tempResult = value1 * value2
+             }else{
+                 tempResult = value2 / value1
+             }
+             digitStack.append(tempResult)
+             outputResult_Label.text = handleOutputResult(output:String(tempResult))
+         }
     
 }
