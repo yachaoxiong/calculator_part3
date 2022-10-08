@@ -59,6 +59,9 @@
                                                 <state key="normal" title="C">
                                                     <color key="titleColor" red="0.87058818339999999" green="0.44313728810000003" blue="0.5176470876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="clearButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="axu-FU-GEA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNc-qg-ECx">
                                                 <rect key="frame" x="195" y="0.0" width="97.666666666666686" height="73.333333333333329"/>
@@ -75,9 +78,12 @@
                                                 <rect key="frame" x="292.66666666666669" y="0.0" width="97.333333333333314" height="73.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="x">
+                                                <state key="normal" title="×">
                                                     <color key="titleColor" red="0.87058818339999999" green="0.44313728810000003" blue="0.5176470876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="operatorButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4dD-Zs-8hF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -121,9 +127,12 @@
                                                 <rect key="frame" x="292.66666666666669" y="0.0" width="97.333333333333314" height="73"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="/">
+                                                <state key="normal" title="÷">
                                                     <color key="titleColor" red="0.87058818339999999" green="0.44313728810000003" blue="0.5176470876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="operatorButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ppt-7X-l9I"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -170,6 +179,9 @@
                                                 <state key="normal" title="+">
                                                     <color key="titleColor" red="0.87058818339999999" green="0.44313728810000003" blue="0.5176470876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="operatorButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hwl-rx-8ko"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -216,6 +228,9 @@
                                                 <state key="normal" title="-">
                                                     <color key="titleColor" red="0.87058818339999999" green="0.44313728810000003" blue="0.5176470876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="operatorButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OpD-j8-B8b"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -262,6 +277,9 @@
                                                 <state key="normal" title="=">
                                                     <color key="titleColor" red="0.87058818339999999" green="0.44313728810000003" blue="0.5176470876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="operatorButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQB-a0-S3B"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
