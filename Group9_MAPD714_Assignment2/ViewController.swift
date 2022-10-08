@@ -67,6 +67,33 @@ class ViewController: UIViewController {
           outputResult_Label.text = subString
       }
     
+    @IBAction func positiveOrNagativeOrPercentageButton_Pressed(_ sender: UIButton) {
+        if hasClickedOperatorButton == true { return }
+        let outputeText:String = outputResult_Label.text!
+        let value:Double = Double(outputeText) ?? 0
+        if sender.titleLabel!.text! == "±"{
+            if value > 0{
+                outputResult_Label.text = "-"+outputeText
+            }else if value < 0 {
+                outputResult_Label.text = handleOutputResult(output:String(value * (-1)))
+            }else{
+                outputResult_Label.text = "0"
+            }
+        }else if sender.titleLabel!.text! == "%" {
+            outputResult_Label.text = String(value/100)
+        }
+    }
+    
+    func handleOutputResult(output:String)->String{
+           var result:String = output
+           if output.contains(".") {
+               let arraySubstrings: [Substring] = output.split(separator: ".")
+               if arraySubstrings[1] == "0"{
+                   result = String(arraySubstrings[0])
+               }
+           }
+           return result;
+       }
     
 }
 

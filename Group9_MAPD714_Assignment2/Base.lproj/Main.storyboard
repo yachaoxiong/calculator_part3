@@ -67,6 +67,9 @@
                                                 <state key="normal" title="±">
                                                     <color key="titleColor" red="0.87058818339999999" green="0.44313728810000003" blue="0.5176470876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="positiveOrNagativeOrPercentageButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ms-JE-INA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eji-cV-oOM">
                                                 <rect key="frame" x="292.66666666666669" y="0.0" width="97.333333333333314" height="73.333333333333329"/>
@@ -237,6 +240,9 @@
                                                 <state key="normal" title="%">
                                                     <color key="titleColor" red="0.87058818339999999" green="0.44313728810000003" blue="0.5176470876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="positiveOrNagativeOrPercentageButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DM9-y8-C7A"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dd6-dm-KD2">
                                                 <rect key="frame" x="195" y="0.0" width="97.666666666666686" height="73"/>
