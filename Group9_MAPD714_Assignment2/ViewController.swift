@@ -8,28 +8,27 @@
 //     - Mingyuan Xie  301275467
 //
 //  Created by Yachao on 2022-09-19.
-
 //  Revision History - Assignment2
-//  V2.0 add numbers and decimal point button function   - 2022-10-7
-//  V2.1 add delete function                             - 2022-10-8
+//  V2.0 add numbers and decimal point button function              - 2022-10-7
+//  V2.1 add delete function                                        - 2022-10-8
+//  V2.3 add operator and clear function                            - 2022-10-8
 //  Last modified Date - 2022-10-7
 //
 //  About The APP
 //  This app is to build a calculation tool that can perform arithmetic operations on numbers.
-
 import UIKit
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var outputResult_Label: UILabel!
-        var digitStack = [Double]()
+        var digitStack = [Float]()
         var operatorStack = [String]()
-        var removedDigitStack = [Double]()
+        var removedDigitStack = [Float]()
         var removedOperatorStack = [String]()
-        var tempResult:Double = 0
+        var tempResult:Float = 0
         var lastOperator:String = ""
         var previousOperatorButton = ""
-        var currentResult:Double = 0
+        var currentResult:Float = 0
         var hasClickedOperatorButton = false
         var hasFinishedInput = false
     
@@ -60,7 +59,7 @@ class ViewController: UIViewController {
             equalButton_Pressed()
             return
         }
-        currentResult = Double(outputResult_Label.text!) ?? 0.0
+        currentResult = Float(outputResult_Label.text!) ?? 0.0
         if hasClickedOperatorButton == true && !handleChangeOperator(sender: sender){
             operatorStack.removeLast()
             operatorStack.append(sender.titleLabel!.text!)
@@ -132,20 +131,5 @@ class ViewController: UIViewController {
            hasFinishedInput = false
        }
     
-    func hendleWhenLastOperatorIsMultiplicationOrDivide(lastOperator:String){
-         let value1:Double = digitStack.removeLast()
-         let value2:Double = digitStack.removeLast()
-         operatorStack.removeLast()
-         if lastOperator == "×" {
-             tempResult = value1 * value2
-         }else{
-             tempResult = value2 / value1
-         }
-         digitStack.append(tempResult)
-         outputResult_Label.text = handleOutputResult(output:String(tempResult))
-     }
-     
-     
     
 }
-
