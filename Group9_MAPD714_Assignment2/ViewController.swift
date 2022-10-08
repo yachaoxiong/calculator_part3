@@ -11,6 +11,7 @@
 
 //  Revision History - Assignment2
 //  V2.0 add numbers and decimal point button function   - 2022-10-7
+//  V2.1 add delete function                             - 2022-10-8
 //  Last modified Date - 2022-10-7
 //
 //  About The APP
@@ -20,52 +21,52 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var FinalResult: UILabel!
+    @IBOutlet weak var outputResult_Label: UILabel!
+        var digitStack = [Double]()
+        var operatorStack = [String]()
+        var removedDigitStack = [Double]()
+        var removedOperatorStack = [String]()
+        var tempResult:Double = 0
+        var lastOperator:String = ""
+        var previousOperatorButton = ""
+        var currentResult:Double = 0
+        var hasClickedOperatorButton = false
+        var hasFinishedInput = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.insetsLayoutMarginsFromSafeArea = false
         // Do any additional setup after loading the view.
     }
-    //event handlers
+    @IBAction func digitButton_Pressed(_ sender: UIButton) {
+           if hasClickedOperatorButton && hasFinishedInput {
+               outputResult_Label.text = ""
+           }
+           let digit:Int! = Int(sender.titleLabel!.text!)
+           if sender.titleLabel!.text! == "." {
+               if !outputResult_Label.text!.contains(".") {
+                   outputResult_Label.text! = outputResult_Label.text! + "."
+               }
+           }else{
+               outputResult_Label.text! = outputResult_Label.text! == "0" ? String(digit): outputResult_Label.text! + String(digit)
+           }
+           hasFinishedInput = false
+           hasClickedOperatorButton = false
+       }
+ 
+    @IBAction func deleteButton_Pressed(_ sender: UIButton) {
+          if hasClickedOperatorButton == true { return }
+          let text = outputResult_Label.text!
+          if text.count == 1 {
+              outputResult_Label.text = "0"
+              return
+          }
+          let beginIndex = text.index(text.startIndex, offsetBy: 0)
+          let endIndex = text.index(text.startIndex, offsetBy: text.count-2)
+          let subString = String(text[beginIndex...endIndex])
+          outputResult_Label.text = subString
+      }
     
-    @IBAction func NumberButton_Pressed(_ sender: UIButton)
-    {
-        let button = sender as UIButton
-        let buttonText = button.titleLabel?.text
-        
-        
-        switch buttonText {
-        case ".":
-            if(!FinalResult.text!.contains("."))
-            {
-                FinalResult.text?.append(buttonText!)
-            }
-        default:
-            if(FinalResult.text == "0")
-            {
-                FinalResult.text = buttonText
-            }
-            else
-            {
-                FinalResult.text?.append(buttonText!)
-            }
-        }
-    }
     
-    @IBAction func ExtraButton_Pressed(_ sender: UIButton) {
-
-    }
-    
-    @IBAction func DeleteButton_Pressed(_ sender: UIButton) {
-        if(FinalResult.text!.count == 1)
-        {
-            FinalResult.text! = "0"
-        }
-        else
-        {
-           FinalResult.text!.removeLast()
-        }
-    }
 }
 
