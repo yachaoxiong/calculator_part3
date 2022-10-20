@@ -19,6 +19,7 @@
 
 //  Revision History - Assignment3
 //  V3.1 added extra buttons UI                                     -2022-10-20
+//  V3.2 realize extra button's functionalities                     -2022-10-20
 //
 
 //  Last modified Date - 2022-10-21
@@ -230,6 +231,24 @@ class ViewController: UIViewController {
             }
             outputResult_Label.text = String(newValue)
             digitStack.append(newValue)
+        }
+        else{
+            let labelValue:Float = Float(outputResult_Label!.text!) ?? 0
+            if(currentOperator == "sin"){
+                newValue=sin(labelValue)
+            }else if(currentOperator == "cos"){
+                newValue=cos(labelValue)
+            }
+            else if(currentOperator == "x2"){
+                newValue=labelValue*labelValue
+            }
+            else if(currentOperator == "1/x"){
+                newValue = 1/labelValue
+            }
+            else if(currentOperator == "gen"){
+                newValue = sqrt(labelValue)
+            }
+            outputResult_Label.text = String(newValue)
         }
     }
     
