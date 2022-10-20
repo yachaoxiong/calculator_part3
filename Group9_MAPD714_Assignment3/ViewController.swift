@@ -2,7 +2,7 @@
 //  ViewController.swift
 //
 //  APP Name: Calculator APP
-//  Group9_MAPD714_Assignment1
+//  Group9_MAPD714_Assignment3
 //  Group Members
 //     - Yachao Xiong  301298033
 //     - Mingyuan Xie  301275467
@@ -16,7 +16,12 @@
 //  v2.4 revert code                                                - 2022-10-8
 //  v2.5 fix number type issue                                      - 2022-10-8
 //  v2.6 added revision info                                        - 2022-10-8
-//  Last modified Date - 2022-10-8
+
+//  Revision History - Assignment3
+//  V3.1 added extra buttons UI                                     -2022-10-20
+//
+
+//  Last modified Date - 2022-10-21
 //
 //  About The APP
 //  This app is to build a calculation tool that can perform arithmetic operations on numbers.
@@ -90,6 +95,7 @@ class ViewController: UIViewController {
                 handleWhenCurrentOperatorIsPlusOrMinus(currentOperator:currentOperator)
             }
         }
+        hasClickedOperatorButton = true
         hasFinishedInput = true
     }
     
@@ -202,6 +208,30 @@ class ViewController: UIViewController {
               hasFinishedInput = true
           }
       }
+    
+    @IBAction func handleOtherOperators(_ sender: UIButton) {
+        let currentOperator = sender.titleLabel!.text!
+        var newValue:Float = 0
+        if hasClickedOperatorButton {
+            let topElement = digitStack.removeLast()
+            if(currentOperator == "sin"){
+                newValue=sin(Float(topElement))
+            }else if(currentOperator == "cos"){
+                newValue=cos(Float(topElement))
+            }
+            else if(currentOperator == "x2"){
+                newValue=topElement*topElement
+            }
+            else if(currentOperator == "1/x"){
+                newValue = 1/topElement
+            }
+            else if(currentOperator == "gen"){
+                newValue = sqrt(topElement)
+            }
+            outputResult_Label.text = String(newValue)
+            digitStack.append(newValue)
+        }
+    }
     
     func handleChangeOperator(sender:UIButton)->Bool{
         if (previousOperatorButton == "+" || previousOperatorButton == "−")
