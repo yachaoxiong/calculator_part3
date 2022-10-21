@@ -47,6 +47,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.insetsLayoutMarginsFromSafeArea = false
         // Do any additional setup after loading the view.
+        print(sin(1.0))
     }
     
     @IBAction func digitButton_Pressed(_ sender: UIButton) {
@@ -220,13 +221,13 @@ class ViewController: UIViewController {
             }else if(currentOperator == "cos"){
                 newValue=cos(Float(topElement))
             }
-            else if(currentOperator == "x2"){
+            else if(currentOperator == "square"){
                 newValue=topElement*topElement
             }
             else if(currentOperator == "1/x"){
                 newValue = 1/topElement
             }
-            else if(currentOperator == "gen"){
+            else if(currentOperator == "sqrt"){
                 newValue = sqrt(topElement)
             }
             outputResult_Label.text = String(newValue)
@@ -234,18 +235,19 @@ class ViewController: UIViewController {
         }
         else{
             let labelValue:Float = Float(outputResult_Label!.text!) ?? 0
+            //print(labelValue)
             if(currentOperator == "sin"){
                 newValue=sin(labelValue)
             }else if(currentOperator == "cos"){
                 newValue=cos(labelValue)
             }
-            else if(currentOperator == "x2"){
+            else if(currentOperator == "square"){
                 newValue=labelValue*labelValue
             }
             else if(currentOperator == "1/x"){
                 newValue = 1/labelValue
             }
-            else if(currentOperator == "gen"){
+            else if(currentOperator == "sqrt"){
                 newValue = sqrt(labelValue)
             }
             outputResult_Label.text = String(newValue)

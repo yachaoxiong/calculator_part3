@@ -44,7 +44,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="168.66666666666666" height="22.666666666666668"/>
                                                 <color key="tintColor" red="0.92953222990036011" green="0.67002218961715698" blue="0.73087126016616821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="gen">
+                                                <buttonConfiguration key="configuration" style="plain" title="sqrt">
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="32"/>
                                                     <color key="baseForegroundColor" red="0.913310706615448" green="0.48347526788711548" blue="0.71133655309677124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
@@ -167,7 +167,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDa-1w-T7J">
                                                 <rect key="frame" x="0.0" y="0.0" width="168.66666666666666" height="22.666666666666668"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="x2">
+                                                <buttonConfiguration key="configuration" style="plain" title="square">
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="32"/>
                                                     <color key="baseForegroundColor" red="0.913310706615448" green="0.48347526788711548" blue="0.71133655309677124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
@@ -234,7 +234,7 @@
                                                 </buttonConfiguration>
                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                                 <connections>
-                                                    <action selector="handleOtherOperators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oJl-yI-uha"/>
+                                                    <action selector="handleOtherOperators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I91-4q-cRO"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cem-SP-0BK">
@@ -295,7 +295,7 @@
                                                 </buttonConfiguration>
                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                                 <connections>
-                                                    <action selector="handleOtherOperators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eEg-kM-HPi"/>
+                                                    <action selector="handleOtherOperators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KzR-wK-mDD"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrd-sh-Ehr">
