@@ -230,7 +230,7 @@ class ViewController: UIViewController {
             else if(currentOperator == "sqrt"){
                 newValue = sqrt(topElement)
             }
-            outputResult_Label.text = String(newValue)
+            outputResult_Label.text = handleOutputResult(output:String(newValue))
             digitStack.append(newValue)
         }
         else{
@@ -250,7 +250,7 @@ class ViewController: UIViewController {
             else if(currentOperator == "sqrt"){
                 newValue = sqrt(labelValue)
             }
-            outputResult_Label.text = String(newValue)
+            outputResult_Label.text = handleOutputResult(output:String(newValue))
         }
     }
     
