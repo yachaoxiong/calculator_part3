@@ -28,6 +28,7 @@
 //  This app is to build a calculation tool that can perform arithmetic operations on numbers.
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     
@@ -47,7 +48,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.insetsLayoutMarginsFromSafeArea = false
         // Do any additional setup after loading the view.
-        print(sin(1.0))
     }
     
     @IBAction func digitButton_Pressed(_ sender: UIButton) {
